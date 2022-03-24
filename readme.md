@@ -23,7 +23,7 @@ npm install --prefix frontend
 npm install --prefix express
 
 // create the .env
-cp .env.dist .env
+cp $PWD/express/.env.dist $PWD/express/.env
 
 // create simlink from vue to the express app
 ln -sF $PWD/frontend/dist $PWD/express/views
@@ -42,11 +42,12 @@ http://localhost:8080/
 
 # Todo
 
-> alot
+> a lot of work to do
 
 * persistance of data via localStorage, cookies, etc.
 * support multiple tables
 * support adding and removing seats from the tables
 * socket or more API calls to let the frontend know when a group leaves
-* depending on groups size, an info could be displayed when a group likely leaves (estimated waiting time)
-
+  * depending on groups size, an info could be displayed when a group likely leaves (estimated waiting time)
+* tests
+* monitoring / logging
