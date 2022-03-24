@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"target": "es6",
+    	"moduleResolution": "node",
+		"lib": [
+			"es2020",
+			"es6",
+			"es5",
+			"dom"
+		],
+		"outDir": "express/classes/",	
+		"rootDir": "./src/classes/",
+		"sourceMap": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"esModuleInterop": true,
+		"types": [
+			"node",
+		],
+		"allowJs": true,
+		"resolveJsonModule": true
+	},
+	"typedocOptions": {
+		"entryPoints": ["./dist/index.js"],
+		"out": "docs"
+	},
+	"include": [
+		"./src/*/**/*",
+		"./src/*/*.json",
+	],
+	"exclude": [
+		"node_modules",
+		".vscode",
+		"dist",
+		"docs",
+		"out",
+		"express",
+		"vue"
+	]
+}
