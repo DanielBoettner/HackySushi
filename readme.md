@@ -19,18 +19,21 @@ Interface would update the seats on the table accordingly.
 
 ```js
 npm install
-npm install --prefix vue
+npm install --prefix frontend
 npm install --prefix express
 
+// create the .env
+cp .env.dist .env
+
 // create simlink from vue to the express app
-ln -sF $PWD/vue/dist $PWD/express/views
+ln -sF $PWD/frontend/dist $PWD/express/views
 
 ```
 
 ## Build & run
 
 ```js
-npm run build --prefix vue && node ./express/app.js 
+npm run build --prefix frontend && node ./express/app.js 
 ```
 
 ## Open in Browser
